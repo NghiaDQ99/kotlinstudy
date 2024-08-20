@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/ivDelete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivMinus"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+        android:background="#FF0000"
+        android:text="X"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/ivMinus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivPlus"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+        android:background="#FFC800"
+        android:text="-"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/ivPlus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+        android:background="#576DFF"
+        android:text="+"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
